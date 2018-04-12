@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/Users/varun/Desktop/ECE6122/6122_FinalProject/main.cpp">
 			<Option target="Project"/>
 		</Unit>

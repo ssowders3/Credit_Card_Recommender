@@ -12,8 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e374889c-520b-4f41-9ef7-e6e7a7182b1a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Parser.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Parser.h" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project" afterPath="$PROJECT_DIR$/cmake-build-debug/Project" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" />
       <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -26,25 +40,69 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <leaf>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="450">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Parser.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <element signature="e#48#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parser.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="12" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generated_transactions.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/generated_transactions.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-142974">
+              <caret line="458" column="24" lean-forward="false" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="_null.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/sys/_types/_null.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Discover-2017-YearEndSummary.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Discover-2017-YearEndSummary.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1577">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +115,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Parser.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Parser.cpp" />
       </list>
     </option>
   </component>
@@ -68,10 +128,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="31" />
+    <option name="x" value="75" />
+    <option name="y" value="29" />
     <option name="width" value="1374" />
-    <option name="height" value="790" />
+    <option name="height" value="537" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -94,6 +154,11 @@
             <path>
               <item name="6122_FinalProject" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="6122_FinalProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="6122_FinalProject" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="6122_FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,22 +208,23 @@
       <option name="presentableId" value="Default" />
       <updated>1523378909353</updated>
       <workItem from="1523378910837" duration="15000" />
-      <workItem from="1523379279690" duration="5766000" />
+      <workItem from="1523379279690" duration="6258000" />
+      <workItem from="1523486111724" duration="7253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5781000" />
+    <option name="totallyTimeSpent" value="13526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="31" width="1374" height="790" extended-state="0" />
+    <frame x="75" y="29" width="1374" height="537" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -186,39 +252,57 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file:///usr/include/sys/_types/_null.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generated_transactions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142974">
+          <caret line="458" column="24" lean-forward="false" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Discover-2017-YearEndSummary.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="161" column="20" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state relative-caret-position="-1577">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Parser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

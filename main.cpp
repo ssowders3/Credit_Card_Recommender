@@ -1,46 +1,82 @@
+
 #include <iostream>
 #include <fstream>
-#include <vector>
-#include <sstream>
+#include <cmath>
+#include "Parser.h"
+#define YEAR 2018
+
 using namespace std;
+
+void generate_transactions();
+
+void getRandomDate(int*, int*);
+string getRandomCategory();
+double getRandomAmount();
+
+
+const string categories[] = {"gas", "restaurants", "departmental_store", "groceries", "supermarkets", "wholesale_clubs",\
+ "hotel", "airfare", "travel_other", "amazon", "paypal", "online", "miscellaneous"};
+
+
 
 int main() {
 
-    std::ifstream input_stream("../data/Discover-2017-YearEndSummary.csv");
-    double temp_d;
+    srand(time(NULL));
+    //generate_transactions();
+    //string file_name = "../data/Discover-2017-YearEndSummary.csv"
+    string file_name = "../data/generated_transactions.csv";
+    Parser my_parse(file_name);
+    my_parse.parse_file();
+}
 
-    std::vector<string> transaction_date;
-    std::vector<string> description;
-    std::vector<double> amount;
-    std::vector<string> category;
 
-    string line = "";
-    string temp = "";
+void generate_transactions() {
 
-    getline(input_stream, line);
-    cout << line << endl;
+    ofstream output_s("../data/generated_transactions.csv");
 
-    while (getline(input_stream, line)) {
+    output_s << "date,";
+    output_s << "amount,";
+    output_s << "category";
+    output_s << endl;
 
-        stringstream ss(line);
+    int day;
+    int month;
 
-        getline(ss, temp, ',');
-        transaction_date.push_back(temp);
+    for (int i = 0; i < 10000; ++i) {
+        getRandomDate(&day, &month);
+        cout << month << "/" << day << endl;
+        output_s << month << "/" << day << "/" << YEAR << "," << getRandomAmount() << "," << getRandomCategory() << endl;
+    }
+}
 
-        getline(ss, temp, ',');
+void getRandomDate(int* day, int* month) {
 
-        getline(ss, temp, ',');
-        description.push_back(temp);
+    *month = 1 + rand() % 12;
 
-        getline(ss, temp, ',');
-        amount.push_back(atof(temp.c_str()));
-
-        getline(ss, temp, ',');
-        category.push_back(temp);
+    if (*month ==  2) {
+        *day = 1 + rand() % 27;
     }
 
-    for (int i = 0 ; i < amount.size(); ++i) {
-        cout << transaction_date.at(i) << " " << description.at(i) << " " << amount.at(i) << " " << category.at(i) << endl;
+    else if (*month == 1 || *month == 3 || *month == 5 || *month == 7 || *month == 8 || *month == 10 || *month == 12) {
+        *day = 1 + rand() % 30;
     }
 
+    else {
+        *day = 1 + rand() % 29;
+    }
+
+
+
+}
+
+string getRandomCategory() {
+    return categories[rand() % 13];
+}
+
+double getRandomAmount() {
+    int exp = 1 + rand() % 3;
+    double amount =  pow(10, exp) * (double) rand()/(double)RAND_MAX;
+
+    amount =  (int)(amount * 100)/100.0;
+    return amount;
 }

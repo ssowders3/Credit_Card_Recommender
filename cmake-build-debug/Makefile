@@ -123,6 +123,33 @@ Project/fast:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+Parser.o: Parser.cpp.o
+
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
