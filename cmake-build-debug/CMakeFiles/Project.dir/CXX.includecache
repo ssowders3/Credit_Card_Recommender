@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.cpp
-Parser.h
-/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.h
-fstream
-/Users/varun/Desktop/ECE6122/6122_FinalProject/fstream
-
-/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.h
-string
--
-vector
--
-iostream
--
-sstream
--
-
-/Users/varun/Desktop/ECE6122/6122_FinalProject/main.cpp
+/Users/stripuramallu/Documents/ECE6122/FinalProject/6122_FinalProject/main.cpp
 iostream
 -
 fstream
@@ -31,8 +15,4 @@ vector
 -
 sstream
 -
-cmath
--
-Parser.h
-/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.h
 
