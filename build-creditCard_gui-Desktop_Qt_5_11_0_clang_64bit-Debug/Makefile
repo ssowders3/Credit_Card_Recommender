@@ -770,7 +770,9 @@ mainwindow.o: ../creditCard_gui/mainwindow.cpp ../creditCard_gui/mainwindow.h \
 		../../Qt/5.11.0/clang_64/lib/QtWidgets.framework/Headers/QFileDialog \
 		../../Qt/5.11.0/clang_64/lib/QtWidgets.framework/Headers/qfiledialog.h \
 		../../Qt/5.11.0/clang_64/lib/QtCore.framework/Headers/QDebug \
-		../../Qt/5.11.0/clang_64/lib/QtCore.framework/Headers/qdebug.h
+		../../Qt/5.11.0/clang_64/lib/QtCore.framework/Headers/qdebug.h \
+		../../Qt/5.11.0/clang_64/lib/QtWidgets.framework/Headers/QTextEdit \
+		../../Qt/5.11.0/clang_64/lib/QtWidgets.framework/Headers/qtextedit.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../creditCard_gui/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

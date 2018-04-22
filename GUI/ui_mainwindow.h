@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.11.0
+** Created by: Qt User Interface Compiler version 5.6.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,7 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QProgressBar>
@@ -291,42 +294,42 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QApplication::translate("MainWindow", "Welcome to our Credit Card Recommender!", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Please choose a weightage for each credit card category to help us learn about your preferences. If you have no preferences just click next!", nullptr));
-        gasLabel->setText(QApplication::translate("MainWindow", "Gas", nullptr));
-        restaurantsLabel->setText(QApplication::translate("MainWindow", "Restaurants", nullptr));
-        departmentStoresLabel->setText(QApplication::translate("MainWindow", "Department Stores", nullptr));
-        groceriesLabel->setText(QApplication::translate("MainWindow", "Groceries", nullptr));
-        supermarketsLabel->setText(QApplication::translate("MainWindow", "Supermarkets", nullptr));
-        wholesaleLabel->setText(QApplication::translate("MainWindow", "Wholesale", nullptr));
-        gasVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        restaurantsVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        departmentStoresVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        supermarketsVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        hotelLabel->setText(QApplication::translate("MainWindow", "Hotel", nullptr));
-        hotelVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        airfareLabel->setText(QApplication::translate("MainWindow", "Airfare", nullptr));
-        airfareVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        groceriesVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        wholesaleVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        travelLabel->setText(QApplication::translate("MainWindow", "Travel", nullptr));
-        travelVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        amazonVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        amazonLabel->setText(QApplication::translate("MainWindow", "Amazon", nullptr));
-        paypalVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        paypalLabel->setText(QApplication::translate("MainWindow", "Paypal", nullptr));
-        onlineVal->setText(QApplication::translate("MainWindow", "0", nullptr));
-        onlineLabel->setText(QApplication::translate("MainWindow", "Online", nullptr));
-        label_3->setText(QApplication::translate("MainWindow", "Total:", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        label->setText(QApplication::translate("MainWindow", "Welcome to our Credit Card Recommender!", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Please choose a weightage for each credit card category to help us learn about your preferences. If you have no preferences just click next!", 0));
+        gasLabel->setText(QApplication::translate("MainWindow", "Gas", 0));
+        restaurantsLabel->setText(QApplication::translate("MainWindow", "Restaurants", 0));
+        departmentStoresLabel->setText(QApplication::translate("MainWindow", "Department Stores", 0));
+        groceriesLabel->setText(QApplication::translate("MainWindow", "Groceries", 0));
+        supermarketsLabel->setText(QApplication::translate("MainWindow", "Supermarkets", 0));
+        wholesaleLabel->setText(QApplication::translate("MainWindow", "Wholesale", 0));
+        gasVal->setText(QApplication::translate("MainWindow", "0", 0));
+        restaurantsVal->setText(QApplication::translate("MainWindow", "0", 0));
+        departmentStoresVal->setText(QApplication::translate("MainWindow", "0", 0));
+        supermarketsVal->setText(QApplication::translate("MainWindow", "0", 0));
+        hotelLabel->setText(QApplication::translate("MainWindow", "Hotel", 0));
+        hotelVal->setText(QApplication::translate("MainWindow", "0", 0));
+        airfareLabel->setText(QApplication::translate("MainWindow", "Airfare", 0));
+        airfareVal->setText(QApplication::translate("MainWindow", "0", 0));
+        groceriesVal->setText(QApplication::translate("MainWindow", "0", 0));
+        wholesaleVal->setText(QApplication::translate("MainWindow", "0", 0));
+        travelLabel->setText(QApplication::translate("MainWindow", "Travel", 0));
+        travelVal->setText(QApplication::translate("MainWindow", "0", 0));
+        amazonVal->setText(QApplication::translate("MainWindow", "0", 0));
+        amazonLabel->setText(QApplication::translate("MainWindow", "Amazon", 0));
+        paypalVal->setText(QApplication::translate("MainWindow", "0", 0));
+        paypalLabel->setText(QApplication::translate("MainWindow", "Paypal", 0));
+        onlineVal->setText(QApplication::translate("MainWindow", "0", 0));
+        onlineLabel->setText(QApplication::translate("MainWindow", "Online", 0));
+        label_3->setText(QApplication::translate("MainWindow", "Total:", 0));
         totalWeights->setText(QString());
-        fileUploadButton->setText(QApplication::translate("MainWindow", "Upload .csv", nullptr));
-        label_9->setText(QApplication::translate("MainWindow", "Please upload a CSV file containing your credit card or debit card transactions from the past month", nullptr));
-        goToPage2->setText(QApplication::translate("MainWindow", "Next", nullptr));
-        label_10->setText(QApplication::translate("MainWindow", "Congrats here are the top 3 credit cards for you!", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Start over!", nullptr));
+        fileUploadButton->setText(QApplication::translate("MainWindow", "Upload .csv", 0));
+        label_9->setText(QApplication::translate("MainWindow", "Please upload a CSV file containing your credit card or debit card transactions from the past month", 0));
+        goToPage2->setText(QApplication::translate("MainWindow", "Next", 0));
+        label_10->setText(QApplication::translate("MainWindow", "Congrats here are the top 3 credit cards for you!", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "Start over!", 0));
         progressBarStatus->setText(QString());
-        goToPage1->setText(QApplication::translate("MainWindow", "Next", nullptr));
+        goToPage1->setText(QApplication::translate("MainWindow", "Next", 0));
     } // retranslateUi
 
 };
