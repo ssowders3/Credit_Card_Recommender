@@ -24,9 +24,63 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
-    <widget class="QWidget" name="page_0">
+    <widget class="QWidget" name="welcome_page">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>311</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Credit Card </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>250</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Recommender</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="continue_button">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>310</y>
+        <width>141</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Click to continue</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="preference_page">
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
@@ -600,8 +654,21 @@
        <string/>
       </property>
      </widget>
+     <widget class="QPushButton" name="pref_next_button">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>460</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="page_1">
+    <widget class="QWidget" name="csv_page">
      <widget class="QPushButton" name="fileUploadButton">
       <property name="geometry">
        <rect>
@@ -634,11 +701,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="goToPage2">
+     <widget class="QPushButton" name="csv_next_button">
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>240</y>
+        <y>450</y>
         <width>113</width>
         <height>32</height>
        </rect>
@@ -648,7 +715,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_2">
+    <widget class="QWidget" name="results_page">
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
@@ -697,7 +764,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>480</y>
+      <y>530</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -713,19 +780,6 @@
     </property>
     <property name="wordWrap">
      <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="goToPage1">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>460</y>
-      <width>113</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Next</string>
     </property>
    </widget>
   </widget>
