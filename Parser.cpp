@@ -36,7 +36,7 @@ void Parser::parse_file() {
         category.push_back(temp);
     }
 
-    for (int i = 0 ; i < amount.size(); ++i) {
-        cout << transaction_date.at(i) << " "  << amount.at(i) << " " << category.at(i) << endl;
-    }
+    //for (int i = 0 ; i < amount.size(); ++i) {
+        //cout << transaction_date.at(i) << " "  << amount.at(i) << " " << category.at(i) << endl;
+    //}
 }
