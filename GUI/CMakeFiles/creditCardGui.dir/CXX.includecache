@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../Parser.h
+string
+-
+vector
+-
+iostream
+-
+sstream
+-
+
 /Users/Sahithi/6122_FinalProject/GUI/creditCardGui_autogen/UVLADIE3JM/moc_mainwindow.cpp
 ../../creditCard_gui/src/mainwindow.h
 /Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/mainwindow.h
@@ -43,11 +53,31 @@ QTextEdit
 -
 QMessageBox
 -
+../../Parser.h
+-
 
 /Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/mainwindow.h
 QMainWindow
 -
 QMessageBox
+-
+../../Parser.h
+-
+
+/Users/Sahithi/6122_FinalProject/Parser.cpp
+Parser.h
+/Users/Sahithi/6122_FinalProject/Parser.h
+fstream
+/Users/Sahithi/6122_FinalProject/fstream
+
+/Users/Sahithi/6122_FinalProject/Parser.h
+string
+-
+vector
+-
+iostream
+-
+sstream
 -
 
 /Users/Sahithi/anaconda3/include/qt/QtCore/QDebug

@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <../../Parser.h>
+
 namespace Ui {
 class MainWindow;
 }
@@ -30,6 +32,7 @@ public:
     ~MainWindow();
     QMessageBox *p1ErrorDialog;
     QMessageBox *p2ErrorDialog;
+    map<string,int> prefMap;
 
 private slots:
     void on_fileUploadButton_clicked();

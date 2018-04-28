@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QTextEdit>
 #include <QMessageBox>
+#include <../../Parser.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -187,7 +188,18 @@ void MainWindow::on_pref_next_button_clicked()
         ui->progressBar->setValue(50);
         ui->progressBarStatus->setText("50%");
         ui->progressBarStatus->repaint();
-
+        prefMap.insert(std::pair<std::string, int>("gas", gasVal));
+        prefMap.insert(std::pair<std::string, int>("restaurants", restaurantsVal));
+        prefMap.insert(std::pair<std::string, int>("departmentStores", departmentStoresVal));
+        prefMap.insert(std::pair<std::string, int>("groceries", groceriesVal));
+        prefMap.insert(std::pair<std::string, int>("supermarkets", supermarketsVal));
+        prefMap.insert(std::pair<std::string, int>("wholesale", wholesaleVal));
+        prefMap.insert(std::pair<std::string, int>("hotel", hotelVal));
+        prefMap.insert(std::pair<std::string, int>("airfare", airfareVal));
+        prefMap.insert(std::pair<std::string, int>("travel", travelVal));
+        prefMap.insert(std::pair<std::string, int>("amazon", amazonVal));
+        prefMap.insert(std::pair<std::string, int>("paypal", paypalVal));
+        prefMap.insert(std::pair<std::string, int>("online", onlineVal));
     } else {
         p1ErrorDialog = new QMessageBox();
         p1ErrorDialog->setText(tr("Sorry your preferences must have a total of 100 or less!"));
@@ -202,6 +214,9 @@ void MainWindow::on_csv_next_button_clicked()
         ui->progressBar->setValue(100);
         ui->progressBarStatus->setText("100%");
         ui->progressBarStatus->repaint();
+        std::string str = filename.toStdString();
+        Parser myParser = Parser(str);
+        myParser.parse_file();
     } else {
         p2ErrorDialog = new QMessageBox();
         p2ErrorDialog->setText(tr("Sorry you must choose a .csv file to continue!"));
