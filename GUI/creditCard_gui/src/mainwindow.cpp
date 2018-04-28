@@ -55,7 +55,7 @@ void MainWindow::initializePage0()
     paypalVal = 0;
     onlineVal = 0;
 
-    //initialize sliders
+    //initialize slider ranges
     ui->travelSlider->setRange(0,100);
     ui->restaurantsSlider->setRange(0,100);
     ui->departmentStoresSlider->setRange(0,100);
@@ -68,6 +68,36 @@ void MainWindow::initializePage0()
     ui->amazonSlider->setRange(0,100);
     ui->paypalSlider->setRange(0,100);
     ui->onlineSlider->setRange(0,100);
+
+    //set slider position to 0
+    ui->travelSlider->setValue(0);
+    ui->restaurantsSlider->setValue(0);
+    ui->departmentStoresSlider->setValue(0);
+    ui->groceriesSlider->setValue(0);
+    ui->superMarketsSlider->setValue(0);
+    ui->wholesaleSlider->setValue(0);
+    ui->hotelSlider->setValue(0);
+    ui->airfareSlider->setValue(0);
+    ui->travelSlider->setValue(0);
+    ui->amazonSlider->setValue(0);
+    ui->paypalSlider->setValue(0);
+    ui->onlineSlider->setValue(0);
+
+    //initalize prefMap
+    prefMap = {
+        { "gas", gasVal },
+        {"restaurants" , restaurantsVal},
+        {"departmentStores" , departmentStoresVal},
+        {"groceries" , groceriesVal},
+        {"supermarkets" , supermarketsVal},
+        {"wholesale" , wholesaleVal},
+        {"hotel" , hotelVal},
+        {"airfare" , airfareVal},
+        {"travel" , travelVal},
+        {"amazon" , amazonVal},
+        {"paypal" , paypalVal},
+        {"online" , onlineVal}
+    };
 }
 
 void MainWindow::sliderTotalUpdate() {
@@ -75,6 +105,7 @@ void MainWindow::sliderTotalUpdate() {
              + supermarketsVal + wholesaleVal + hotelVal + airfareVal + travelVal
              + amazonVal + paypalVal + onlineVal;
      ui->totalWeights->setText(QString::number(totalWeights));
+     ui->totalWeights->repaint();
 }
 void MainWindow::on_gasSlider_valueChanged(int value)
 {
