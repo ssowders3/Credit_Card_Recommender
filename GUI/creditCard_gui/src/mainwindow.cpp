@@ -188,18 +188,21 @@ void MainWindow::on_pref_next_button_clicked()
         ui->progressBar->setValue(50);
         ui->progressBarStatus->setText("50%");
         ui->progressBarStatus->repaint();
-        prefMap.insert(std::pair<std::string, int>("gas", gasVal));
-        prefMap.insert(std::pair<std::string, int>("restaurants", restaurantsVal));
-        prefMap.insert(std::pair<std::string, int>("departmentStores", departmentStoresVal));
-        prefMap.insert(std::pair<std::string, int>("groceries", groceriesVal));
-        prefMap.insert(std::pair<std::string, int>("supermarkets", supermarketsVal));
-        prefMap.insert(std::pair<std::string, int>("wholesale", wholesaleVal));
-        prefMap.insert(std::pair<std::string, int>("hotel", hotelVal));
-        prefMap.insert(std::pair<std::string, int>("airfare", airfareVal));
-        prefMap.insert(std::pair<std::string, int>("travel", travelVal));
-        prefMap.insert(std::pair<std::string, int>("amazon", amazonVal));
-        prefMap.insert(std::pair<std::string, int>("paypal", paypalVal));
-        prefMap.insert(std::pair<std::string, int>("online", onlineVal));
+        prefMap = {
+            { "gas", gasVal },
+            {"restaurants" , restaurantsVal},
+            {"departmentStores" , departmentStoresVal},
+            {"groceries" , groceriesVal},
+            {"supermarkets" , supermarketsVal},
+            {"wholesale" , wholesaleVal},
+            {"hotel" , hotelVal},
+            {"airfare" , airfareVal},
+            {"travel" , travelVal},
+            {"amazon" , amazonVal},
+            {"paypal" , paypalVal},
+            {"online" , onlineVal}
+        };
+        //qDebug() << prefMap["gas"];
     } else {
         p1ErrorDialog = new QMessageBox();
         p1ErrorDialog->setText(tr("Sorry your preferences must have a total of 100 or less!"));
