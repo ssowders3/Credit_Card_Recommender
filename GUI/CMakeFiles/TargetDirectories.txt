@@ -1,4 +1,0 @@
-/Users/Sahithi/6122_FinalProject/GUI/CMakeFiles/rebuild_cache.dir
-/Users/Sahithi/6122_FinalProject/GUI/CMakeFiles/edit_cache.dir
-/Users/Sahithi/6122_FinalProject/GUI/CMakeFiles/creditCardGui.dir
-/Users/Sahithi/6122_FinalProject/GUI/CMakeFiles/creditCardGui_autogen.dir
