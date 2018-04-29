@@ -3,6 +3,7 @@
 #include <fstream>
 #include <cmath>
 #include "Parser.h"
+#include "Card.h"
 #define YEAR 2018
 
 using namespace std;
@@ -14,8 +15,8 @@ string getRandomCategory();
 double getRandomAmount();
 
 
-const string categories[] = {"gas", "restaurants", "departmental_store", "groceries", "supermarkets", "wholesale_clubs",\
- "hotel", "airfare", "travel_other", "amazon", "paypal", "online", "miscellaneous"};
+//const string categories[] = {"gas", "restaurants", "departmental_store", "groceries", "supermarkets", "wholesale_clubs",\
+ //"hotel", "airfare", "travel_other", "amazon", "paypal", "online", "miscellaneous"};
 
 
 
@@ -25,8 +26,21 @@ int main() {
     //generate_transactions();
     //string file_name = "../data/Discover-2017-YearEndSummary.csv"
     string file_name = "../data/generated_transactions.csv";
-    Parser my_parse(file_name);
+    string cards_csv = "../cards.csv";
+    //Parser my_parse(file_name);
+    Parser my_parse(file_name, cards_csv);
     my_parse.parse_file();
+    my_parse.compute();
+    //my_parse.print_cards();
+    auto card_vector = my_parse.recommend_top(3);
+
+    for (auto card: card_vector) {
+        cout << card << endl;
+    }
+
+
+
+
 }
 
 
