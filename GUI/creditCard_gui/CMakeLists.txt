@@ -13,6 +13,8 @@ find_package(Qt5Widgets)
 set(SOURCES
   src/main.cpp
   src/mainwindow.cpp
+  ../../Parser.cpp
+  ../../Parser.h
 )
 
 set(FORMS
@@ -25,4 +27,5 @@ add_executable(creditCardGui ${SOURCES} ${FORM_H})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(creditCardGui Qt5::Widgets)
+
 

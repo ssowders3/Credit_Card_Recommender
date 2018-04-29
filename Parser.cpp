@@ -65,6 +65,7 @@ void Parser::parse_file() {
         category.push_back(temp);
     }
 
+<<<<<<< HEAD
 //    for (int i = 0 ; i < amount.size(); ++i) {
 //        cout << transaction_date.at(i) << " "  << amount.at(i) << " " << category.at(i) << endl;
 //    }
@@ -109,5 +110,10 @@ bool sort_by_amount(const Card& a, const Card &b) {
 
 bool sort_by_bias_amount(const Card &a, const Card &b) {
     return (a.amount_with_bias > b.amount_with_bias);
+}
+
+    //for (int i = 0 ; i < amount.size(); ++i) {
+        //cout << transaction_date.at(i) << " "  << amount.at(i) << " " << category.at(i) << endl;
+    //}
 }
 

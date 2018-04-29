@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <../../Parser.h>
+
 namespace Ui {
 class MainWindow;
 }
@@ -30,12 +32,10 @@ public:
     ~MainWindow();
     QMessageBox *p1ErrorDialog;
     QMessageBox *p2ErrorDialog;
+    map<string,int> prefMap;
 
 private slots:
     void on_fileUploadButton_clicked();
-    void on_goToPage1_clicked();
-    void on_goToPage2_clicked();
-    void on_pushButton_clicked();
     void on_gasSlider_valueChanged(int value);
 
     void on_restaurantsSlider_valueChanged(int value);
@@ -60,6 +60,16 @@ private slots:
 
     void on_onlineSlider_valueChanged(int value);
     void initializePage0();
+
+    void on_continue_button_clicked();
+
+    void on_pref_next_button_clicked();
+
+    void on_csv_next_button_clicked();
+
+    void on_pushButton_clicked();
+
+    void sliderTotalUpdate();
 
 private:
     Ui::MainWindow *ui;
