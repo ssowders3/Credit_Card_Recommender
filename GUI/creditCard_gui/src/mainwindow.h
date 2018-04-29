@@ -33,6 +33,9 @@ public:
     QMessageBox *p1ErrorDialog;
     QMessageBox *p2ErrorDialog;
     map<string,int> prefMap;
+    std::vector<string> transaction_date;
+    std::vector<double> amount;
+    std::vector<string> category;
 
 private slots:
     void on_fileUploadButton_clicked();

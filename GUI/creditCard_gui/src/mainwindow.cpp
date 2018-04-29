@@ -84,20 +84,19 @@ void MainWindow::initializePage0()
     ui->onlineSlider->setValue(0);
 
     //initalize prefMap
-    prefMap = {
-        { "gas", gasVal },
-        {"restaurants" , restaurantsVal},
-        {"departmentStores" , departmentStoresVal},
-        {"groceries" , groceriesVal},
-        {"supermarkets" , supermarketsVal},
-        {"wholesale" , wholesaleVal},
-        {"hotel" , hotelVal},
-        {"airfare" , airfareVal},
-        {"travel" , travelVal},
-        {"amazon" , amazonVal},
-        {"paypal" , paypalVal},
-        {"online" , onlineVal}
-    };
+    prefMap["gas"] = gasVal;
+    prefMap["restaurants"] = restaurantsVal;
+    prefMap["departmentStores"] = departmentStoresVal;
+    prefMap["groceries"] = groceriesVal;
+    prefMap["supermarkets"] = supermarketsVal;
+    prefMap["wholesale"] = wholesaleVal;
+    prefMap["hotel"] = hotelVal;
+    prefMap["airfare"] = airfareVal;
+    prefMap["travel"] = travelVal;
+    prefMap["amazon" ] = amazonVal;
+    prefMap["paypal"] = paypalVal;
+    prefMap["online"] = onlineVal;
+
 }
 
 void MainWindow::sliderTotalUpdate() {
@@ -219,21 +218,18 @@ void MainWindow::on_pref_next_button_clicked()
         ui->progressBar->setValue(50);
         ui->progressBarStatus->setText("50%");
         ui->progressBarStatus->repaint();
-        prefMap = {
-            { "gas", gasVal },
-            {"restaurants" , restaurantsVal},
-            {"departmentStores" , departmentStoresVal},
-            {"groceries" , groceriesVal},
-            {"supermarkets" , supermarketsVal},
-            {"wholesale" , wholesaleVal},
-            {"hotel" , hotelVal},
-            {"airfare" , airfareVal},
-            {"travel" , travelVal},
-            {"amazon" , amazonVal},
-            {"paypal" , paypalVal},
-            {"online" , onlineVal}
-        };
-        //qDebug() << prefMap["gas"];
+        prefMap["gas"] = gasVal;
+        prefMap["restaurants"] = restaurantsVal;
+        prefMap["departmentStores"] = departmentStoresVal;
+        prefMap["groceries"] = groceriesVal;
+        prefMap["supermarkets"] = supermarketsVal;
+        prefMap["wholesale"] = wholesaleVal;
+        prefMap["hotel"] = hotelVal;
+        prefMap["airfare"] = airfareVal;
+        prefMap["travel"] = travelVal;
+        prefMap["amazon" ] = amazonVal;
+        prefMap["paypal"] = paypalVal;
+        prefMap["online"] = onlineVal;
     } else {
         p1ErrorDialog = new QMessageBox();
         p1ErrorDialog->setText(tr("Sorry your preferences must have a total of 100 or less!"));
@@ -251,6 +247,9 @@ void MainWindow::on_csv_next_button_clicked()
         std::string str = filename.toStdString();
         Parser myParser = Parser(str);
         myParser.parse_file();
+        transaction_date = myParser.transaction_date;
+        amount = myParser.amount;
+        category = myParser.category;
     } else {
         p2ErrorDialog = new QMessageBox();
         p2ErrorDialog->setText(tr("Sorry you must choose a .csv file to continue!"));
