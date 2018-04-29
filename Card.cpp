@@ -20,6 +20,12 @@ Card::Card(string line) {
         card_weights[categories[i]] = atoi(temp.c_str());
     }
 
+    getline(ss, temp, ',');
+    image_name = temp;
+
+    getline(ss, temp, ',');
+    link = temp;
+
 }
 
 void Card::compute(string category, double transaction_amount, int bias) {

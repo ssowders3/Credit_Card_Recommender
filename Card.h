@@ -27,6 +27,8 @@ private:
     double amount;
     double amount_with_bias;
     string name;
+    string image_name;
+    string link;
 
 };
 
