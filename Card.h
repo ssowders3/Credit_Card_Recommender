@@ -26,6 +26,8 @@ public:
     string name;
     string image_name;
     string link;
+    string cred_score;
+
 
 // private:
 //     map<string, int> card_weights;

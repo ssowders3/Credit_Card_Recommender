@@ -6,10 +6,11 @@
 
 
 
-Parser::Parser(string file_name) {
+Parser::Parser(string file_name, map<string,int> prefMap) {
 
     this->file_name = file_name;
     this->cards_csv = "../cards.csv";
+    this->pref_map = prefMap;
     create_cards();
 
 }
@@ -67,7 +68,7 @@ void Parser::compute() {
 
     for (int i = 0; i < amount.size(); ++i) {
         for (int j = 0; j < cards_vector.size(); ++j) {
-            cards_vector.at(j).compute(category.at(i), amount.at(i), 1);
+            cards_vector.at(j).compute(category.at(i), amount.at(i), pref_map[category.at(i)]);
         }
     }
 }
@@ -81,7 +82,9 @@ void Parser::print_cards() {
 }
 
 vector<Card> Parser::recommend_top(int num) {
-    sort(cards_vector.begin(), cards_vector.end(), sort_by_amount);
+    //sort(cards_vector.begin(), cards_vector.end(), sort_by_amount);
+    sort(cards_vector.begin(), cards_vector.end(), sort_by_bias_amount);
+
 
     if (num > cards_vector.size()) {
         num = cards_vector.size();

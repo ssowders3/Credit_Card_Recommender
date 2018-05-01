@@ -26,6 +26,11 @@ Card::Card(string line) {
     getline(ss, temp, ',');
     link = temp;
 
+    getline(ss, temp, ',');
+    cred_score = temp;
+
+
+
 }
 
 void Card::compute(string category, double transaction_amount, int bias) {
