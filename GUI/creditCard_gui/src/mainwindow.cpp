@@ -251,17 +251,31 @@ void MainWindow::on_csv_next_button_clicked()
         myParser.parse_file();
         myParser.compute();
         vector<Card> card_vector = myParser.recommend_top(3);
-        std:string s = "";
+        std:string temp = "";
         int count = 0;
+        QString qs =  QString::fromStdString(temp);
         for (Card card: card_vector) {
             if(count == 0) {
-               s = card.name;
+               temp = card.name;
+               qs = QString::fromStdString(temp);
+               ui-> first_card_pic -> setText(qs);
+               ui-> first_card_pic ->repaint();
+               qDebug() << qs;
+            } else if(count == 1) {
+                temp = card.name;
+                qs = QString::fromStdString(temp);
+                ui-> second_card_pic -> setText(qs);
+                ui-> second_card_pic ->repaint();
+                qDebug() << qs;
+            } else if(count == 2) {
+                temp = card.name;
+                qs = QString::fromStdString(temp);
+                ui-> third_card_pic -> setText(qs);
+                ui-> third_card_pic ->repaint();
+                qDebug() << qs;
             }
+            count = count + 1;
         }
-        QString qs =  QString::fromStdString(s);
-        ui-> first_card_pic -> setText(qs);
-        ui-> first_card_pic ->repaint();
-        qDebug() << qs;
         //qDebug() << card_vector[0].name;
         //qDebug() << "selected file path : " << filename.toUtf8();
         //ui->first_card_pic->setStyleSheet("background-image: url(:../forms/amazonprime.png)");
