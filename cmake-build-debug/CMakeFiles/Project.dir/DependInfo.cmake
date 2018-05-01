@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/varun/Desktop/ECE6122/6122_FinalProject/Card.cpp" "/Users/varun/Desktop/ECE6122/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/Card.cpp.o"
-  "/Users/varun/Desktop/ECE6122/6122_FinalProject/Parser.cpp" "/Users/varun/Desktop/ECE6122/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/Parser.cpp.o"
-  "/Users/varun/Desktop/ECE6122/6122_FinalProject/main.cpp" "/Users/varun/Desktop/ECE6122/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o"
+  "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/Card.cpp" "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/Card.cpp.o"
+  "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/Parser.cpp" "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/Parser.cpp.o"
+  "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/main.cpp" "/Users/varun/Desktop/ECE6122/project/6122_FinalProject/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

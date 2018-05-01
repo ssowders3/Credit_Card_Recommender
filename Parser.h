@@ -19,7 +19,7 @@ class Parser {
 public:
 
     Parser(string, string);
-    Parser(string);
+    Parser(string, map<string,int>);
     void parse_file();
     void create_cards();
     void compute();
@@ -31,6 +31,7 @@ public:
     std::vector<string> category;
     string cards_csv;
     vector<Card> cards_vector;
+    map<string, int> pref_map;
 
 
 // private:
