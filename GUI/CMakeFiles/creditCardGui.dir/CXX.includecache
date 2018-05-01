@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../Card.h
+map
+-
+vector
+-
+string
+-
+sstream
+-
+iostream
+-
+
 ../Parser.h
 string
 -
@@ -14,6 +26,26 @@ vector
 iostream
 -
 sstream
+-
+fstream
+-
+Card.h
+../Card.h
+
+/Users/Sahithi/6122_FinalProject/Card.cpp
+Card.h
+/Users/Sahithi/6122_FinalProject/Card.h
+
+/Users/Sahithi/6122_FinalProject/Card.h
+map
+-
+vector
+-
+string
+-
+sstream
+-
+iostream
 -
 
 /Users/Sahithi/6122_FinalProject/GUI/creditCardGui_autogen/UVLADIE3JM/moc_mainwindow.cpp
@@ -55,6 +87,8 @@ QMessageBox
 -
 ../../Parser.h
 -
+../../Card.h
+-
 
 /Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/mainwindow.h
 QMainWindow
@@ -67,8 +101,6 @@ QMessageBox
 /Users/Sahithi/6122_FinalProject/Parser.cpp
 Parser.h
 /Users/Sahithi/6122_FinalProject/Parser.h
-fstream
-/Users/Sahithi/6122_FinalProject/fstream
 
 /Users/Sahithi/6122_FinalProject/Parser.h
 string
@@ -79,6 +111,10 @@ iostream
 -
 sstream
 -
+fstream
+-
+Card.h
+/Users/Sahithi/6122_FinalProject/Card.h
 
 /Users/Sahithi/anaconda3/include/qt/QtCore/QDebug
 qdebug.h

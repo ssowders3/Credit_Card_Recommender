@@ -10,8 +10,8 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/Users/Sahithi/6122_FinalProject/GUI/creditCardGui_autogen")
 set(AM_INCLUDE_DIR "include")
 # Files
-set(AM_SOURCES "/Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/main.cpp;/Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/mainwindow.cpp;/Users/Sahithi/6122_FinalProject/Parser.cpp")
-set(AM_HEADERS "/Users/Sahithi/6122_FinalProject/Parser.h")
+set(AM_SOURCES "/Users/Sahithi/6122_FinalProject/Card.cpp;/Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/main.cpp;/Users/Sahithi/6122_FinalProject/GUI/creditCard_gui/src/mainwindow.cpp;/Users/Sahithi/6122_FinalProject/Parser.cpp")
+set(AM_HEADERS "/Users/Sahithi/6122_FinalProject/Card.h;/Users/Sahithi/6122_FinalProject/Parser.h")
 set(AM_SETTINGS_FILE "/Users/Sahithi/6122_FinalProject/GUI/CMakeFiles/creditCardGui_autogen.dir/AutogenOldSettings.txt")
 # Qt
 set(AM_QT_VERSION_MAJOR "5")

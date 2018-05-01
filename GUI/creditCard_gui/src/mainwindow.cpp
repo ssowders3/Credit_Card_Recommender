@@ -5,6 +5,8 @@
 #include <QTextEdit>
 #include <QMessageBox>
 #include <../../Parser.h>
+#include <../../Card.h>
+#define YEAR 2018
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -245,11 +247,24 @@ void MainWindow::on_csv_next_button_clicked()
         ui->progressBarStatus->setText("100%");
         ui->progressBarStatus->repaint();
         std::string str = filename.toStdString();
-        Parser myParser = Parser(str);
+        Parser myParser(str);
         myParser.parse_file();
-        transaction_date = myParser.transaction_date;
-        amount = myParser.amount;
-        category = myParser.category;
+        myParser.compute();
+        vector<Card> card_vector = myParser.recommend_top(3);
+        std:string s = "";
+        int count = 0;
+        for (Card card: card_vector) {
+            if(count == 0) {
+               s = card.name;
+            }
+        }
+        QString qs =  QString::fromStdString(s);
+        ui-> first_card_pic -> setText(qs);
+        ui-> first_card_pic ->repaint();
+        qDebug() << qs;
+        //qDebug() << card_vector[0].name;
+        //qDebug() << "selected file path : " << filename.toUtf8();
+        //ui->first_card_pic->setStyleSheet("background-image: url(:../forms/amazonprime.png)");
     } else {
         p2ErrorDialog = new QMessageBox();
         p2ErrorDialog->setText(tr("Sorry you must choose a .csv file to continue!"));

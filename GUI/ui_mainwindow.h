@@ -82,6 +82,9 @@ public:
     QWidget *results_page;
     QLabel *label_10;
     QPushButton *pushButton;
+    QLabel *first_card_pic;
+    QLabel *second_card_pic;
+    QLabel *third_card_pic;
     QProgressBar *progressBar;
     QLabel *progressBarStatus;
 
@@ -292,6 +295,16 @@ public:
         pushButton = new QPushButton(results_page);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(140, 430, 113, 32));
+        first_card_pic = new QLabel(results_page);
+        first_card_pic->setObjectName(QStringLiteral("first_card_pic"));
+        first_card_pic->setGeometry(QRect(37, 70, 151, 101));
+        first_card_pic->setStyleSheet(QStringLiteral("background-image: url(amazonprime.png)"));
+        second_card_pic = new QLabel(results_page);
+        second_card_pic->setObjectName(QStringLiteral("second_card_pic"));
+        second_card_pic->setGeometry(QRect(37, 190, 151, 101));
+        third_card_pic = new QLabel(results_page);
+        third_card_pic->setObjectName(QStringLiteral("third_card_pic"));
+        third_card_pic->setGeometry(QRect(37, 310, 151, 101));
         stackedWidget->addWidget(results_page);
         progressBar = new QProgressBar(centralWidget);
         progressBar->setObjectName(QStringLiteral("progressBar"));
@@ -307,7 +320,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -353,6 +366,9 @@ public:
         csv_next_button->setText(QApplication::translate("MainWindow", "Next", 0));
         label_10->setText(QApplication::translate("MainWindow", "Congrats here are the top 3 credit cards for you!", 0));
         pushButton->setText(QApplication::translate("MainWindow", "Start over!", 0));
+        first_card_pic->setText(QApplication::translate("MainWindow", "Insert Credit Card #1", 0));
+        second_card_pic->setText(QApplication::translate("MainWindow", "Insert Credit Card #2", 0));
+        third_card_pic->setText(QApplication::translate("MainWindow", "Insert Credit Card #3", 0));
         progressBarStatus->setText(QString());
     } // retranslateUi
 

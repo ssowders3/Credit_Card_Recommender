@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>forms/amazonprime.png</file>
+        <file>forms/bluecasheveryday.png</file>
+        <file>forms/bluecashpreferred.png</file>
+        <file>forms/boacashback.png</file>
+        <file>forms/chasefreedom.png</file>
+        <file>forms/chasesapphirereserved.png</file>
+        <file>forms/deltaskymiles.png</file>
+        <file>forms/discoverit.png</file>
+        <file>forms/quicksilverone.jpg</file>
+        <file>forms/savor.png</file>
+        <file>forms/uber.png</file>
+        <file>forms/venture.png</file>
+        <file>forms/wellsfargo.png</file>
+        <file>forms/mainwindow-old.ui</file>
+    </qresource>
+</RCC>

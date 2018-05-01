@@ -15,11 +15,16 @@ set(SOURCES
   src/mainwindow.cpp
   ../../Parser.cpp
   ../../Parser.h
+  ../../Card.cpp
+  ../../Card.h
 )
 
 set(FORMS
   forms/mainwindow.ui
 )
+
+set(RESOURCES resources.qrc )
+
 qt5_wrap_ui(FORM_H ${FORMS})
 
 # Tell CMake to create the helloworld executable

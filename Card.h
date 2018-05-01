@@ -20,15 +20,20 @@ public:
     friend ostream & operator << (ostream &out, const Card &c);
     friend bool sort_by_amount(const Card& a, const Card &b);
     friend bool sort_by_bias_amount(const Card &a, const Card &b);
-
-
-private:
     map<string, int> card_weights;
     double amount;
     double amount_with_bias;
     string name;
     string image_name;
     string link;
+
+// private:
+//     map<string, int> card_weights;
+//     double amount;
+//     double amount_with_bias;
+//     string name;
+//     string image_name;
+//     string link;
 
 };
 

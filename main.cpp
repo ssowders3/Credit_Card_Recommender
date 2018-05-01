@@ -20,28 +20,28 @@ double getRandomAmount();
 
 
 
-int main() {
+// int main() {
 
-    srand(time(NULL));
-    //generate_transactions();
-    //string file_name = "../data/Discover-2017-YearEndSummary.csv"
-    string file_name = "../data/generated_transactions.csv";
-    string cards_csv = "../cards.csv";
-    //Parser my_parse(file_name);
-    Parser my_parse(file_name, cards_csv);
-    my_parse.parse_file();
-    my_parse.compute();
-    //my_parse.print_cards();
-    auto card_vector = my_parse.recommend_top(3);
+//     srand(time(NULL));
+//     //generate_transactions();
+//     //string file_name = "../data/Discover-2017-YearEndSummary.csv"
+//     string file_name = "../data/generated_transactions.csv";
+//     string cards_csv = "../cards.csv";
+//     //Parser my_parse(file_name);
+//     Parser my_parse(file_name, cards_csv);
+//     my_parse.parse_file();
+//     my_parse.compute();
+//     //my_parse.print_cards();
+//     vector<Card> card_vector = my_parse.recommend_top(3);
 
-    for (auto card: card_vector) {
-        cout << card << endl;
-    }
-
-
+//     for (Card card: card_vector) {
+//         cout << card << endl;
+//     }
 
 
-}
+
+
+// }
 
 
 void generate_transactions() {

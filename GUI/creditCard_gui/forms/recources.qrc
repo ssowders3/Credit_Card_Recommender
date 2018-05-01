@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>amazonprime.png</file>
+        <file>bluecasheveryday.png</file>
+        <file>bluecashpreferred.png</file>
+        <file>boacashback.png</file>
+        <file>chasefreedom.png</file>
+        <file>chasesapphirereserved.png</file>
+        <file>deltaskymiles.png</file>
+        <file>discoverit.png</file>
+        <file>quicksilverone.jpg</file>
+        <file>savor.png</file>
+        <file>uber.png</file>
+        <file>venture.png</file>
+        <file>wellsfargo.png</file>
+    </qresource>
+</RCC>

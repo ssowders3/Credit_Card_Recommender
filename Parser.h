@@ -25,17 +25,22 @@ public:
     void compute();
     void print_cards();
     vector<Card> recommend_top(int);
-
-
-
-private:
-    //member variables
     string file_name;
     std::vector<string> transaction_date;
     std::vector<double> amount;
     std::vector<string> category;
     string cards_csv;
     vector<Card> cards_vector;
+
+
+// private:
+//     //member variables
+//     string file_name;
+//     std::vector<string> transaction_date;
+//     std::vector<double> amount;
+//     std::vector<string> category;
+//     string cards_csv;
+//     vector<Card> cards_vector;
 
 };
 

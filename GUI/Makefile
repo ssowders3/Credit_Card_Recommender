@@ -136,6 +136,33 @@ creditCardGui_autogen/fast:
 	$(MAKE) -f CMakeFiles/creditCardGui_autogen.dir/build.make CMakeFiles/creditCardGui_autogen.dir/build
 .PHONY : creditCardGui_autogen/fast
 
+Users/Sahithi/6122_FinalProject/Card.o: Users/Sahithi/6122_FinalProject/Card.cpp.o
+
+.PHONY : Users/Sahithi/6122_FinalProject/Card.o
+
+# target to build an object file
+Users/Sahithi/6122_FinalProject/Card.cpp.o:
+	$(MAKE) -f CMakeFiles/creditCardGui.dir/build.make CMakeFiles/creditCardGui.dir/Users/Sahithi/6122_FinalProject/Card.cpp.o
+.PHONY : Users/Sahithi/6122_FinalProject/Card.cpp.o
+
+Users/Sahithi/6122_FinalProject/Card.i: Users/Sahithi/6122_FinalProject/Card.cpp.i
+
+.PHONY : Users/Sahithi/6122_FinalProject/Card.i
+
+# target to preprocess a source file
+Users/Sahithi/6122_FinalProject/Card.cpp.i:
+	$(MAKE) -f CMakeFiles/creditCardGui.dir/build.make CMakeFiles/creditCardGui.dir/Users/Sahithi/6122_FinalProject/Card.cpp.i
+.PHONY : Users/Sahithi/6122_FinalProject/Card.cpp.i
+
+Users/Sahithi/6122_FinalProject/Card.s: Users/Sahithi/6122_FinalProject/Card.cpp.s
+
+.PHONY : Users/Sahithi/6122_FinalProject/Card.s
+
+# target to generate assembly for a file
+Users/Sahithi/6122_FinalProject/Card.cpp.s:
+	$(MAKE) -f CMakeFiles/creditCardGui.dir/build.make CMakeFiles/creditCardGui.dir/Users/Sahithi/6122_FinalProject/Card.cpp.s
+.PHONY : Users/Sahithi/6122_FinalProject/Card.cpp.s
+
 Users/Sahithi/6122_FinalProject/Parser.o: Users/Sahithi/6122_FinalProject/Parser.cpp.o
 
 .PHONY : Users/Sahithi/6122_FinalProject/Parser.o
@@ -254,6 +281,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... creditCardGui"
 	@echo "... creditCardGui_autogen"
+	@echo "... Users/Sahithi/6122_FinalProject/Card.o"
+	@echo "... Users/Sahithi/6122_FinalProject/Card.i"
+	@echo "... Users/Sahithi/6122_FinalProject/Card.s"
 	@echo "... Users/Sahithi/6122_FinalProject/Parser.o"
 	@echo "... Users/Sahithi/6122_FinalProject/Parser.i"
 	@echo "... Users/Sahithi/6122_FinalProject/Parser.s"

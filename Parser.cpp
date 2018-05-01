@@ -6,11 +6,10 @@
 
 
 
-Parser::Parser(string file_name, string cards_csv) {
+Parser::Parser(string file_name) {
 
     this->file_name = file_name;
-    this->cards_csv = cards_csv;
-
+    this->cards_csv = "../cards.csv";
     create_cards();
 
 }
@@ -31,12 +30,6 @@ void Parser::create_cards() {
 
 
 }
-
-
-Parser::Parser(string file_name) {
-    this->file_name = file_name;
-}
-
 
 void Parser::parse_file() {
 
