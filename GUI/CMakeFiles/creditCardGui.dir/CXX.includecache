@@ -101,6 +101,8 @@ QMessageBox
 /Users/Sahithi/6122_FinalProject/Parser.cpp
 Parser.h
 /Users/Sahithi/6122_FinalProject/Parser.h
+unistd.h
+-
 
 /Users/Sahithi/6122_FinalProject/Parser.h
 string

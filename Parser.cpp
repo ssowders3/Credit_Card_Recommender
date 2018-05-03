@@ -3,7 +3,7 @@
 //
 
 #include "Parser.h"
-
+#include <unistd.h>
 
 
 Parser::Parser(string file_name, map<string,int> prefMap) {
@@ -18,12 +18,18 @@ Parser::Parser(string file_name, map<string,int> prefMap) {
 void Parser::create_cards() {
 
     std::ifstream input_stream(cards_csv);
-
+    char buf[100];
+    char * temp = buf;
+    getwd(temp);
+    cout << buf;
     string line;
     //skip the first line (category names)
     getline(input_stream, line);
+    cout << "INSIDE CREATE CARDS\n";
 
     while (getline(input_stream, line)) {
+
+        cout << line << endl;
         Card card_obj(line);
         //cout << card_obj << endl;
         cards_vector.push_back(card_obj);

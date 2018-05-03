@@ -58,18 +58,18 @@ void MainWindow::initializePage0()
     onlineVal = 0;
 
     //initialize slider ranges
-    ui->travelSlider->setRange(0,100);
-    ui->restaurantsSlider->setRange(0,100);
-    ui->departmentStoresSlider->setRange(0,100);
-    ui->groceriesSlider->setRange(0,100);
-    ui->superMarketsSlider->setRange(0,100);
-    ui->wholesaleSlider->setRange(0,100);
-    ui->hotelSlider->setRange(0,100);
-    ui->airfareSlider->setRange(0,100);
-    ui->travelSlider->setRange(0,100);
-    ui->amazonSlider->setRange(0,100);
-    ui->paypalSlider->setRange(0,100);
-    ui->onlineSlider->setRange(0,100);
+    ui->travelSlider->setRange(0,10);
+    ui->restaurantsSlider->setRange(0,10);
+    ui->departmentStoresSlider->setRange(0,10);
+    ui->groceriesSlider->setRange(0,10);
+    ui->superMarketsSlider->setRange(0,10);
+    ui->wholesaleSlider->setRange(0,10);
+    ui->hotelSlider->setRange(0,10);
+    ui->airfareSlider->setRange(0,10);
+    ui->travelSlider->setRange(0,10);
+    ui->amazonSlider->setRange(0,10);
+    ui->paypalSlider->setRange(0,10);
+    ui->onlineSlider->setRange(0,10);
 
     //set slider position to 0
     ui->travelSlider->setValue(0);
@@ -88,16 +88,17 @@ void MainWindow::initializePage0()
     //initalize prefMap
     prefMap["gas"] = gasVal;
     prefMap["restaurants"] = restaurantsVal;
-    prefMap["departmentStores"] = departmentStoresVal;
+    prefMap["department_store"] = departmentStoresVal;
     prefMap["groceries"] = groceriesVal;
     prefMap["supermarkets"] = supermarketsVal;
     prefMap["wholesale"] = wholesaleVal;
     prefMap["hotel"] = hotelVal;
-    prefMap["airfare"] = airfareVal;
-    prefMap["travel"] = travelVal;
+    prefMap["airfair"] = airfareVal;
+    prefMap["travel_other"] = travelVal;
     prefMap["amazon" ] = amazonVal;
     prefMap["paypal"] = paypalVal;
     prefMap["online"] = onlineVal;
+    prefMap["miscellaneous"] = 0;
 
 }
 
@@ -215,20 +216,20 @@ void MainWindow::on_continue_button_clicked()
 
 void MainWindow::on_pref_next_button_clicked()
 {
-    if(totalWeights <= 100) {
+    if(totalWeights <= 120 || totalWeights == 0) {
         ui->stackedWidget->setCurrentIndex(2);
         ui->progressBar->setValue(50);
         ui->progressBarStatus->setText("50%");
         ui->progressBarStatus->repaint();
         prefMap["gas"] = gasVal;
         prefMap["restaurants"] = restaurantsVal;
-        prefMap["departmentStores"] = departmentStoresVal;
+        prefMap["department_store"] = departmentStoresVal;
         prefMap["groceries"] = groceriesVal;
         prefMap["supermarkets"] = supermarketsVal;
         prefMap["wholesale"] = wholesaleVal;
         prefMap["hotel"] = hotelVal;
-        prefMap["airfare"] = airfareVal;
-        prefMap["travel"] = travelVal;
+        prefMap["airfair"] = airfareVal;
+        prefMap["travel_other"] = travelVal;
         prefMap["amazon" ] = amazonVal;
         prefMap["paypal"] = paypalVal;
         prefMap["online"] = onlineVal;
@@ -247,13 +248,15 @@ void MainWindow::on_csv_next_button_clicked()
         ui->progressBarStatus->setText("100%");
         ui->progressBarStatus->repaint();
         std::string str = filename.toStdString();
-        Parser myParser(str);
+        Parser myParser(str,prefMap);
         myParser.parse_file();
         myParser.compute();
         vector<Card> card_vector = myParser.recommend_top(3);
         std:string temp = "";
         int count = 0;
         QString qs =  QString::fromStdString(temp);
+        qDebug() << QString::number(card_vector.size());
+        qDebug() << QString::number(prefMap.size());
         for (Card card: card_vector) {
             if(count == 0) {
                temp = card.name;
@@ -276,9 +279,6 @@ void MainWindow::on_csv_next_button_clicked()
             }
             count = count + 1;
         }
-        //qDebug() << card_vector[0].name;
-        //qDebug() << "selected file path : " << filename.toUtf8();
-        //ui->first_card_pic->setStyleSheet("background-image: url(:../forms/amazonprime.png)");
     } else {
         p2ErrorDialog = new QMessageBox();
         p2ErrorDialog->setText(tr("Sorry you must choose a .csv file to continue!"));

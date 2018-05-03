@@ -17,8 +17,6 @@ using namespace std;
 class Parser {
 
 public:
-
-    Parser(string, string);
     Parser(string, map<string,int>);
     void parse_file();
     void create_cards();
