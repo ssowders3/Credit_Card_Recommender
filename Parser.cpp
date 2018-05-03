@@ -26,9 +26,7 @@ void Parser::create_cards() {
     //skip the first line (category names)
     getline(input_stream, line);
     cout << "INSIDE CREATE CARDS\n";
-
     while (getline(input_stream, line)) {
-
         cout << line << endl;
         Card card_obj(line);
         //cout << card_obj << endl;
@@ -42,9 +40,6 @@ void Parser::parse_file() {
 
     std::ifstream input_stream(file_name);
     double temp_d;
-
-
-
     string line = "";
     string temp = "";
 
