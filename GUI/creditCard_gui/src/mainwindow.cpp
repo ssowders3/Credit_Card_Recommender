@@ -58,6 +58,7 @@ void MainWindow::initializePage0()
     onlineVal = 0;
 
     //initialize slider ranges
+    ui -> gasSlider -> setRange(0,10);
     ui->travelSlider->setRange(0,10);
     ui->restaurantsSlider->setRange(0,10);
     ui->departmentStoresSlider->setRange(0,10);
@@ -72,6 +73,7 @@ void MainWindow::initializePage0()
     ui->onlineSlider->setRange(0,10);
 
     //set slider position to 0
+    ui -> gasSlider -> setValue(0);
     ui->travelSlider->setValue(0);
     ui->restaurantsSlider->setValue(0);
     ui->departmentStoresSlider->setValue(0);
@@ -257,25 +259,83 @@ void MainWindow::on_csv_next_button_clicked()
         QString qs =  QString::fromStdString(temp);
         qDebug() << QString::number(card_vector.size());
         qDebug() << QString::number(prefMap.size());
+        int tempCount = 0;
         for (Card card: card_vector) {
             if(count == 0) {
-               temp = card.name;
+               temp = "#1 " + card.name;
                qs = QString::fromStdString(temp);
                ui-> first_card_pic -> setText(qs);
                ui-> first_card_pic ->repaint();
+
+               tempCount = card.amount;
+               qs =  QString::number(tempCount);
+               ui -> first_card_saved -> setText(qs);
+               ui -> first_card_saved -> repaint();
+
+               temp = card.cred_score;
+               qs = QString::fromStdString(temp);
+               ui -> first_card_score -> setText(qs);
+               ui -> first_card_score -> repaint();
+
+               temp = "\"" + card.link + "\"";
+               temp = "<a href=" + temp + ">Apply Now!</a>";
+               qs = QString::fromStdString(temp);
                qDebug() << qs;
+               ui -> first_card_link ->setText(qs);
+               ui -> first_card_link -> setTextFormat(Qt::RichText);
+               ui -> first_card_link -> setTextInteractionFlags(Qt::TextBrowserInteraction);
+               ui -> first_card_link -> setOpenExternalLinks(true);
+
             } else if(count == 1) {
-                temp = card.name;
+                temp = "#2 " +  card.name;
                 qs = QString::fromStdString(temp);
                 ui-> second_card_pic -> setText(qs);
                 ui-> second_card_pic ->repaint();
+
+                tempCount = card.amount;
+                qs =  QString::number(tempCount);
+                ui -> second_card_saved -> setText(qs);
+                ui -> second_card_saved -> repaint();
+
+                temp = card.cred_score;
+                qs = QString::fromStdString(temp);
+                ui -> second_card_score -> setText(qs);
+                ui -> second_card_score -> repaint();
+
+                temp = "\"" + card.link + "\"";
+                temp = "<a href=" + temp + ">Apply Now!</a>";
+                qs = QString::fromStdString(temp);
                 qDebug() << qs;
+                ui -> second_card_link ->setText(qs);
+                ui -> second_card_link -> setTextFormat(Qt::RichText);
+                ui -> second_card_link -> setTextInteractionFlags(Qt::TextBrowserInteraction);
+                ui -> second_card_link -> setOpenExternalLinks(true);
+
             } else if(count == 2) {
-                temp = card.name;
+                temp = "#3 " + card.name;
                 qs = QString::fromStdString(temp);
                 ui-> third_card_pic -> setText(qs);
                 ui-> third_card_pic ->repaint();
+
+
+                tempCount = card.amount;
+                qs =  QString::number(tempCount);
+                ui -> third_card_saved -> setText(qs);
+                ui -> third_card_saved -> repaint();
+
+                temp = card.cred_score;
+                qs = QString::fromStdString(temp);
+                ui -> third_card_score -> setText(qs);
+                ui -> third_card_score -> repaint();
+
+                temp = "\"" + card.link + "\"";
+                temp = "<a href=" + temp + ">Apply Now!</a>";
+                qs = QString::fromStdString(temp);
                 qDebug() << qs;
+                ui -> third_card_link ->setText(qs);
+                ui -> third_card_link -> setTextFormat(Qt::RichText);
+                ui -> third_card_link -> setTextInteractionFlags(Qt::TextBrowserInteraction);
+                ui -> third_card_link -> setOpenExternalLinks(true);
             }
             count = count + 1;
         }
